@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Play Kelbra Games</title>
+<meta name="description" content="Calm, honest puzzle games for Android by Kelbra Games: Huezel, Tileberry and Alikeberry.">
+<style>
+:root{--bg:#f6f7fb;--ink:#1b1d29;--mute:#5b6072;--card:#fff;--line:#e3e6ef;--acc:#2f6f4f;--accink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#12141c;--ink:#eef0f7;--mute:#a4abc0;--card:#1b1e29;--line:#2a2e3d;--acc:#5fcf94;--accink:#0b1a12}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:640px;margin:0 auto;padding:36px 16px 48px}
+h1{font-size:30px;margin:0 0 6px}h2{font-size:21px;margin:0 0 4px}
+.lead{color:var(--mute);margin:0 0 22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin:14px 0}
+.card p{color:var(--mute);margin:6px 0 14px}
+.btn{display:inline-block;background:var(--acc);color:var(--accink);text-decoration:none;font-weight:700;padding:12px 20px;border-radius:12px}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.soon{color:var(--mute);font-size:15px}
+small,footer{color:var(--mute);font-size:14px}
+a{color:var(--acc)}
+</style></head><body><main>
+<h1>Play Kelbra Games</h1>
+<p class="lead">Calm, honest games for your Android phone. Tap a game to open it on Google Play.</p>
+
+<div class="card"><h2>Huezel: Color Block Puzzle</h2>
+<p>Make one-color pure lines in a glossy block puzzle. No ads while you play.</p>
+<a class="btn" data-id="com.kelbra.huezel" href="https://play.google.com/store/apps/details?id=com.kelbra.huezel">Get it on Google Play</a></div>
+
+<div class="card"><h2>Tileberry: Calm Tile Match</h2>
+<p>A relaxing tile-matching game with big, clear tiles, a new board every day, and no ads.</p>
+<a class="btn" data-id="com.kelbra.tileberry" href="https://play.google.com/store/apps/details?id=com.kelbra.tileberry">Get it on Google Play</a></div>
+
+<div class="card"><h2>Alikeberry: Calm Sort Puzzle</h2>
+<p>Sort words, colors, numbers and pictures into groups. Calm and clever, with no timers and a fresh daily puzzle.</p>
+<a class="btn" data-id="com.kelbra.alikeberry" href="https://play.google.com/store/apps/details?id=com.kelbra.alikeberry">Get it on Google Play</a></div>
+
+<p class="soon">More games are on the way. iPhone versions are coming later.</p>
+<footer>Kelbra Business Solutions LLC &middot; <a href="mailto:support@kelbrasolutions.net">support@kelbrasolutions.net</a></footer>
+</main>
+<script>
+// Optional: ?src=tiktok (or facebook, instagram, youtube) tags Google Play installs so we can see which post worked.
+(function(){try{
+var s=(new URLSearchParams(location.search).get('src')||'site').replace(/[^a-z0-9_-]/gi,'').slice(0,24)||'site';
+document.querySelectorAll('a.btn[data-id]').forEach(function(a){
+a.href='https://play.google.com/store/apps/details?id='+a.dataset.id+'&referrer='+encodeURIComponent('utm_source='+s+'&utm_medium=social&utm_campaign=play_page');});
+}catch(e){}})();
+</script>
+</body></html>
